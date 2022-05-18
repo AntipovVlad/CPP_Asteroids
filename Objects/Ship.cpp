@@ -18,7 +18,7 @@ Ship::Ship(float w, float h) : BaseObject(w, h) {
 
     for (auto &d : dots)
         for (auto &dd : d)
-            dd *= r;
+            dd *= 15.f;
 }
 
 void Ship::move(float dt) {

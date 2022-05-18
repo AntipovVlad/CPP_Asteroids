@@ -1,0 +1,139 @@
+\hypertarget{classBullet}{}\doxysection{Bullet Class Reference}
+\label{classBullet}\index{Bullet@{Bullet}}
+
+
+Game object \mbox{\hyperlink{classBullet}{Bullet}} class.  
+
+
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBullet_a21c977c9bc8a5690dba3353ed3edf933}{Bullet}} (float W, float H, vector$<$ float $>$ xy, float en\+\_\+v)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a0d7c324bae93daf1e410858c482f2052}{move}} (float dt)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBullet}{Bullet}} move func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_ad8cf97785331fd70ab93d31c1b196c74}{make\+\_\+invalid}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} self-\/destruction func. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBullet_a5231647d44c7b676e4eee7ed69803d21}{is\+\_\+valid}} ()
+\begin{DoxyCompactList}\small\item\em Checks whether asteroid has hp or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classBullet_a8b2d18ffcbe5e3c91186b82c82208147}{vx}}
+\begin{DoxyCompactList}\small\item\em x vector coordinate \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBullet_a84bd01af7de79adef538ce4d70c3fa3a}{vy}}
+\begin{DoxyCompactList}\small\item\em y vector coordinate \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBullet_a75d0ab3ec9205271b8b4e436d5aadd72}{valid}} = true
+\begin{DoxyCompactList}\small\item\em does asteroid exist \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Game object \mbox{\hyperlink{classBullet}{Bullet}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBullet_a21c977c9bc8a5690dba3353ed3edf933}\label{classBullet_a21c977c9bc8a5690dba3353ed3edf933}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H,  }\item[{vector$<$ float $>$}]{xy,  }\item[{float}]{en\+\_\+v }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & width of screen \\
+\hline
+{\em H} & height of screen \\
+\hline
+{\em xy} & x and y coordinates \\
+\hline
+{\em en\+\_\+v} & direction vector \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBullet_a5231647d44c7b676e4eee7ed69803d21}\label{classBullet_a5231647d44c7b676e4eee7ed69803d21}} 
+\index{Bullet@{Bullet}!is\_valid@{is\_valid}}
+\index{is\_valid@{is\_valid}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{is\_valid()}{is\_valid()}}
+{\footnotesize\ttfamily bool Bullet\+::is\+\_\+valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks whether asteroid has hp or not. 
+
+\begin{DoxyReturn}{Returns}
+param {\itshape valid} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_ad8cf97785331fd70ab93d31c1b196c74}\label{classBullet_ad8cf97785331fd70ab93d31c1b196c74}} 
+\index{Bullet@{Bullet}!make\_invalid@{make\_invalid}}
+\index{make\_invalid@{make\_invalid}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{make\_invalid()}{make\_invalid()}}
+{\footnotesize\ttfamily void Bullet\+::make\+\_\+invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} self-\/destruction func. 
+
+\mbox{\Hypertarget{classBullet_a0d7c324bae93daf1e410858c482f2052}\label{classBullet_a0d7c324bae93daf1e410858c482f2052}} 
+\index{Bullet@{Bullet}!move@{move}}
+\index{move@{move}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Bullet\+::move (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBullet}{Bullet}} move func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time from last frame \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBullet_a75d0ab3ec9205271b8b4e436d5aadd72}\label{classBullet_a75d0ab3ec9205271b8b4e436d5aadd72}} 
+\index{Bullet@{Bullet}!valid@{valid}}
+\index{valid@{valid}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{valid}{valid}}
+{\footnotesize\ttfamily bool Bullet\+::valid = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+does asteroid exist 
+
+\mbox{\Hypertarget{classBullet_a8b2d18ffcbe5e3c91186b82c82208147}\label{classBullet_a8b2d18ffcbe5e3c91186b82c82208147}} 
+\index{Bullet@{Bullet}!vx@{vx}}
+\index{vx@{vx}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{vx}{vx}}
+{\footnotesize\ttfamily float Bullet\+::vx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+x vector coordinate 
+
+\mbox{\Hypertarget{classBullet_a84bd01af7de79adef538ce4d70c3fa3a}\label{classBullet_a84bd01af7de79adef538ce4d70c3fa3a}} 
+\index{Bullet@{Bullet}!vy@{vy}}
+\index{vy@{vy}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{vy}{vy}}
+{\footnotesize\ttfamily float Bullet\+::vy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+y vector coordinate 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Bullet_8h}{Bullet.\+h}}\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Bullet_8cpp}{Bullet.\+cpp}}\end{DoxyCompactItemize}

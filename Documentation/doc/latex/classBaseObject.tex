@@ -1,0 +1,265 @@
+\hypertarget{classBaseObject}{}\doxysection{Base\+Object Class Reference}
+\label{classBaseObject}\index{BaseObject@{BaseObject}}
+
+
+Base class for game objects.  
+
+
+
+
+{\ttfamily \#include $<$Base\+Object.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBaseObject_a277a6f0e843bd93e43238329e6d507be}{Base\+Object}} (float W, float H)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBaseObject_ac243a7f83f8a6ac699ba521e9cc136b5}{move}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} move func. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}{rotate}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} rotation func. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{classBaseObject_a1438f7d713aff9f85dfc5568576159e6}{gen\+\_\+virtual\+\_\+dots}} (float d\+\_\+x, float d\+\_\+y)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} dot generation with coordinates for display func. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{classBaseObject_a669bb24677744376ad6fd6f2441e651d}{gen\+\_\+true\+\_\+dots}} (float d\+\_\+x, float d\+\_\+y)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} dot generation with real coordinates func. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBaseObject_a7cf125bb2c8fb59e536c53a86ea52f3f}{dot\+\_\+inside}} (vector$<$ float $>$ center, float x0, float y0)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} check whether dot inside object or not. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a023e8161a39442b8b0688a7434b07842}{get\+\_\+x}} () const
+\begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s x coordinate. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_af77ef57809ab74f39ccbd8f5573c86d0}{get\+\_\+y}} () const
+\begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s y coordinate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBaseObject_a965515917ad480c5da934ef8739408a2}{get\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classBaseObject_a2c4a1eba3098d0a8655becbef41a83a7}{h}}
+\begin{DoxyCompactList}\small\item\em window height \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a9c9e287e60d6554b9712e4e93da91f05}{w}}
+\begin{DoxyCompactList}\small\item\em window width \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_adf7b24159f9eee110b8e8921d2dedcb7}{x}} \{\}
+\begin{DoxyCompactList}\small\item\em x coordinate \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a006bb07d3f3649cf13a1bc31d9caaa49}{y}} \{\}
+\begin{DoxyCompactList}\small\item\em y coordinate \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a6831e9a7b8d7b97615bbb6f997174a51}{angle}} = 0.f
+\begin{DoxyCompactList}\small\item\em rotation angle \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a72b3171bd6a8e7c12c0949fffb652959}{speed}} \{\}
+\item 
+float \mbox{\hyperlink{classBaseObject_af730a2ca5ad28d24e4780fd2134246a1}{dangle}} \{\}
+\item 
+int \mbox{\hyperlink{classBaseObject_a1374b4dc0de705c91a29146c5c1a606b}{size}} \{\}
+\item 
+vector$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{classBaseObject_a7355b63d26fbdd7bf12011336ea4ed2d}{dots}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBaseObject_a277a6f0e843bd93e43238329e6d507be}\label{classBaseObject_a277a6f0e843bd93e43238329e6d507be}} 
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{BaseObject()}{BaseObject()}}
+{\footnotesize\ttfamily Base\+Object\+::\+Base\+Object (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & width of screen \\
+\hline
+{\em H} & height of screen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBaseObject_a7cf125bb2c8fb59e536c53a86ea52f3f}\label{classBaseObject_a7cf125bb2c8fb59e536c53a86ea52f3f}} 
+\index{BaseObject@{BaseObject}!dot\_inside@{dot\_inside}}
+\index{dot\_inside@{dot\_inside}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{dot\_inside()}{dot\_inside()}}
+{\footnotesize\ttfamily bool Base\+Object\+::dot\+\_\+inside (\begin{DoxyParamCaption}\item[{vector$<$ float $>$}]{center,  }\item[{float}]{x0,  }\item[{float}]{y0 }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} check whether dot inside object or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & coordinate of asteroid\textquotesingle{}s center clone \\
+\hline
+{\em x0} & x dot coordinate \\
+\hline
+{\em y0} & y dot coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBaseObject_a669bb24677744376ad6fd6f2441e651d}\label{classBaseObject_a669bb24677744376ad6fd6f2441e651d}} 
+\index{BaseObject@{BaseObject}!gen\_true\_dots@{gen\_true\_dots}}
+\index{gen\_true\_dots@{gen\_true\_dots}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{gen\_true\_dots()}{gen\_true\_dots()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ float $>$ $>$ Base\+Object\+::gen\+\_\+true\+\_\+dots (\begin{DoxyParamCaption}\item[{float}]{d\+\_\+x,  }\item[{float}]{d\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} dot generation with real coordinates func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+\_\+x} & x center coordinate \\
+\hline
+{\em d\+\_\+y} & y center coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBaseObject_a1438f7d713aff9f85dfc5568576159e6}\label{classBaseObject_a1438f7d713aff9f85dfc5568576159e6}} 
+\index{BaseObject@{BaseObject}!gen\_virtual\_dots@{gen\_virtual\_dots}}
+\index{gen\_virtual\_dots@{gen\_virtual\_dots}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{gen\_virtual\_dots()}{gen\_virtual\_dots()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ float $>$ $>$ Base\+Object\+::gen\+\_\+virtual\+\_\+dots (\begin{DoxyParamCaption}\item[{float}]{d\+\_\+x,  }\item[{float}]{d\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} dot generation with coordinates for display func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+\_\+x} & x center coordinate \\
+\hline
+{\em d\+\_\+y} & y center coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBaseObject_a965515917ad480c5da934ef8739408a2}\label{classBaseObject_a965515917ad480c5da934ef8739408a2}} 
+\index{BaseObject@{BaseObject}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily int Base\+Object\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns object\textquotesingle{}s size. 
+
+\mbox{\Hypertarget{classBaseObject_a023e8161a39442b8b0688a7434b07842}\label{classBaseObject_a023e8161a39442b8b0688a7434b07842}} 
+\index{BaseObject@{BaseObject}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily float Base\+Object\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns object\textquotesingle{}s x coordinate. 
+
+\mbox{\Hypertarget{classBaseObject_af77ef57809ab74f39ccbd8f5573c86d0}\label{classBaseObject_af77ef57809ab74f39ccbd8f5573c86d0}} 
+\index{BaseObject@{BaseObject}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily float Base\+Object\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns object\textquotesingle{}s y coordinate. 
+
+\mbox{\Hypertarget{classBaseObject_ac243a7f83f8a6ac699ba521e9cc136b5}\label{classBaseObject_ac243a7f83f8a6ac699ba521e9cc136b5}} 
+\index{BaseObject@{BaseObject}!move@{move}}
+\index{move@{move}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Base\+Object\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} move func. 
+
+\mbox{\Hypertarget{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}\label{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}} 
+\index{BaseObject@{BaseObject}!rotate@{rotate}}
+\index{rotate@{rotate}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Base\+Object\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} rotation func. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBaseObject_a6831e9a7b8d7b97615bbb6f997174a51}\label{classBaseObject_a6831e9a7b8d7b97615bbb6f997174a51}} 
+\index{BaseObject@{BaseObject}!angle@{angle}}
+\index{angle@{angle}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Base\+Object\+::angle = 0.f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+rotation angle 
+
+\mbox{\Hypertarget{classBaseObject_af730a2ca5ad28d24e4780fd2134246a1}\label{classBaseObject_af730a2ca5ad28d24e4780fd2134246a1}} 
+\index{BaseObject@{BaseObject}!dangle@{dangle}}
+\index{dangle@{dangle}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{dangle}{dangle}}
+{\footnotesize\ttfamily float Base\+Object\+::dangle \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBaseObject_a7355b63d26fbdd7bf12011336ea4ed2d}\label{classBaseObject_a7355b63d26fbdd7bf12011336ea4ed2d}} 
+\index{BaseObject@{BaseObject}!dots@{dots}}
+\index{dots@{dots}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{dots}{dots}}
+{\footnotesize\ttfamily vector$<$vector$<$float$>$ $>$ Base\+Object\+::dots\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBaseObject_a2c4a1eba3098d0a8655becbef41a83a7}\label{classBaseObject_a2c4a1eba3098d0a8655becbef41a83a7}} 
+\index{BaseObject@{BaseObject}!h@{h}}
+\index{h@{h}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily float Base\+Object\+::h\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+window height 
+
+\mbox{\Hypertarget{classBaseObject_a1374b4dc0de705c91a29146c5c1a606b}\label{classBaseObject_a1374b4dc0de705c91a29146c5c1a606b}} 
+\index{BaseObject@{BaseObject}!size@{size}}
+\index{size@{size}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int Base\+Object\+::size \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBaseObject_a72b3171bd6a8e7c12c0949fffb652959}\label{classBaseObject_a72b3171bd6a8e7c12c0949fffb652959}} 
+\index{BaseObject@{BaseObject}!speed@{speed}}
+\index{speed@{speed}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Base\+Object\+::speed \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBaseObject_a9c9e287e60d6554b9712e4e93da91f05}\label{classBaseObject_a9c9e287e60d6554b9712e4e93da91f05}} 
+\index{BaseObject@{BaseObject}!w@{w}}
+\index{w@{w}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily float Base\+Object\+::w\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+window width 
+
+\mbox{\Hypertarget{classBaseObject_adf7b24159f9eee110b8e8921d2dedcb7}\label{classBaseObject_adf7b24159f9eee110b8e8921d2dedcb7}} 
+\index{BaseObject@{BaseObject}!x@{x}}
+\index{x@{x}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Base\+Object\+::x \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+x coordinate 
+
+\mbox{\Hypertarget{classBaseObject_a006bb07d3f3649cf13a1bc31d9caaa49}\label{classBaseObject_a006bb07d3f3649cf13a1bc31d9caaa49}} 
+\index{BaseObject@{BaseObject}!y@{y}}
+\index{y@{y}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Base\+Object\+::y \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+y coordinate 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{BaseObject_8h}{Base\+Object.\+h}}\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{BaseObject_8cpp}{Base\+Object.\+cpp}}\end{DoxyCompactItemize}

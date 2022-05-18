@@ -38,7 +38,7 @@ Asteroid::Asteroid(float W, float H): BaseObject(W, H) {
             dd = (float)hp_size * dd * distr_3(eng) + distr_4(eng);
 }
 
-Asteroid::Asteroid(float W, float H, float en_x, float en_y, int s) : Asteroid(W, H) {
+Asteroid::Asteroid(float W, float H, float en_x, float en_y, int max_health) : Asteroid(W, H) {
     size = 7;
 
     std::random_device rd;

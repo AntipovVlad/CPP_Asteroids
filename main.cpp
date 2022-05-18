@@ -10,9 +10,14 @@
 
 using std::vector;
 
-const int WIDTH = 1200;
-const int HEIGHT = 800;
+const int WIDTH = 1200; //!< Screen width
+const int HEIGHT = 800; //!< Screen height
 
+/**
+ * Creation of visible object's copies func
+ *
+ * @param obj Game object (asteroid or ship)
+ */
 template<typename T>
 std::set<vector<float>> get_object_copies(T obj) {
     float x = obj.get_x();
@@ -30,6 +35,12 @@ std::set<vector<float>> get_object_copies(T obj) {
     return delta;
 }
 
+/**
+ * Draw objects
+ *
+ * @param win game window
+ * @param obj Game object (asteroid or ship)
+ */
 template<typename T>
 void draw_object(sf::RenderWindow &win, T& obj) {
     float x = obj.get_x();
@@ -59,6 +70,12 @@ void draw_object(sf::RenderWindow &win, T& obj) {
     }
 }
 
+/**
+ * Draw bullets
+ *
+ * @param win game window
+ * @param obj Game object (asteroid or ship)
+ */
 void draw_bullet(sf::RenderWindow &win, Bullet& obj) {
     sf::CircleShape b;
     b.setRadius(1);
@@ -68,6 +85,12 @@ void draw_bullet(sf::RenderWindow &win, Bullet& obj) {
     win.draw(b);
 }
 
+/**
+ * Function that checks collision between objects
+ *
+ * @param obj1 Game object (asteroid, ship or bullet)
+ * @param obj2 Game object (asteroid, ship or bullet)
+ */
 template<typename T1, typename T2>
 bool check_collision(T1& obj1, T2& obj2) {
     for (auto & dc : get_object_copies(obj1))
@@ -84,6 +107,12 @@ bool check_collision(T1& obj1, T2& obj2) {
     return false;
 }
 
+/**
+ * Spit asteroid after destruction
+ *
+ * @param aas asteroid array
+ * @param a origin asteroid
+ */
 void split_asteroid(vector<Asteroid> & aas, Asteroid & a) {
     a.make_invalid();
 
@@ -94,6 +123,9 @@ void split_asteroid(vector<Asteroid> & aas, Asteroid & a) {
     aas.emplace_back(Asteroid{(float)WIDTH, (float)HEIGHT, a.get_x(), a.get_y(), a.get_hp_size() - 1});
 }
 
+/**
+ * Main loop function
+ */
 int main() {
     float dt;
     int score = 100;

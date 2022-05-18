@@ -1,0 +1,223 @@
+\hypertarget{classShip}{}\doxysection{Ship Class Reference}
+\label{classShip}\index{Ship@{Ship}}
+
+
+Game object \mbox{\hyperlink{classShip}{Ship}} class.  
+
+
+
+
+{\ttfamily \#include $<$Ship.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShip_a1c255113bbd408fad402bdaa17353c01}{Ship}} (float W, float H)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShip_ac25f964ac0daaa02658a82fdcbcb6fba}{move}} (float dt)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShip}{Ship}} move func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShip_a3ca1af018d5aa51d36955e42823aeb43}{rotate}} (float dt, bool left)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShip}{Ship}} rotation func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShip_a97bce7f63d8bf80784a3c0cbd570e2cf}{destroy\+\_\+ship}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShip}{Ship}} destruction func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShip_a67973a8aa54ae778666b424b8b78574f}{respawn\+\_\+ship}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShip}{Ship}} respawn func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShip_a24ebaeaebdb3f60215144a4cb8d7a6ad}{change\+\_\+safe\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classShip}{Ship}} making ship visible or invisible for asteroids func. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classShip_a37ce4cdeba51c04adabd9bedd4319dde}{is\+\_\+destroyed}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether ship destroyed or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classShip_a8ceb3e7259c4d9e4487092fb0b0f7b1c}{is\+\_\+alive}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether ship has hp or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classShip_ace949c15ab5f3f469a460a1d92fde65b}{is\+\_\+safe}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether ship in safe mode or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classShip_a390253ff18553a172317b281d681e571}{get\+\_\+hp}} () const
+\begin{DoxyCompactList}\small\item\em Returns ship hp. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classShip_a04daa7d9ccaaaa0cdbdaea76e9c2da65}{get\+\_\+angle}} () const
+\begin{DoxyCompactList}\small\item\em Returns ship angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classShip_a0b702d5b8dc1b96439604fc492e15275}{safe\+\_\+mode}} = false
+\begin{DoxyCompactList}\small\item\em can asteroid be destroyed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classShip_a2275602cc505a55f41893bbb20495a93}{destroyed}} = false
+\begin{DoxyCompactList}\small\item\em does asteroid destroyed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classShip_aa2d86cea2f0912918e0ab9d23cecb0b1}{hp}} = 3
+\begin{DoxyCompactList}\small\item\em ship\textquotesingle{}s hp \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Game object \mbox{\hyperlink{classShip}{Ship}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShip_a1c255113bbd408fad402bdaa17353c01}\label{classShip_a1c255113bbd408fad402bdaa17353c01}} 
+\index{Ship@{Ship}!Ship@{Ship}}
+\index{Ship@{Ship}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{Ship()}{Ship()}}
+{\footnotesize\ttfamily Ship\+::\+Ship (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & width of screen \\
+\hline
+{\em H} & height of screen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShip_a24ebaeaebdb3f60215144a4cb8d7a6ad}\label{classShip_a24ebaeaebdb3f60215144a4cb8d7a6ad}} 
+\index{Ship@{Ship}!change\_safe\_mode@{change\_safe\_mode}}
+\index{change\_safe\_mode@{change\_safe\_mode}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{change\_safe\_mode()}{change\_safe\_mode()}}
+{\footnotesize\ttfamily void Ship\+::change\+\_\+safe\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classShip}{Ship}} making ship visible or invisible for asteroids func. 
+
+\mbox{\Hypertarget{classShip_a97bce7f63d8bf80784a3c0cbd570e2cf}\label{classShip_a97bce7f63d8bf80784a3c0cbd570e2cf}} 
+\index{Ship@{Ship}!destroy\_ship@{destroy\_ship}}
+\index{destroy\_ship@{destroy\_ship}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{destroy\_ship()}{destroy\_ship()}}
+{\footnotesize\ttfamily void Ship\+::destroy\+\_\+ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classShip}{Ship}} destruction func. 
+
+\mbox{\Hypertarget{classShip_a04daa7d9ccaaaa0cdbdaea76e9c2da65}\label{classShip_a04daa7d9ccaaaa0cdbdaea76e9c2da65}} 
+\index{Ship@{Ship}!get\_angle@{get\_angle}}
+\index{get\_angle@{get\_angle}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{get\_angle()}{get\_angle()}}
+{\footnotesize\ttfamily float Ship\+::get\+\_\+angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns ship angle. 
+
+\mbox{\Hypertarget{classShip_a390253ff18553a172317b281d681e571}\label{classShip_a390253ff18553a172317b281d681e571}} 
+\index{Ship@{Ship}!get\_hp@{get\_hp}}
+\index{get\_hp@{get\_hp}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{get\_hp()}{get\_hp()}}
+{\footnotesize\ttfamily int Ship\+::get\+\_\+hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns ship hp. 
+
+\mbox{\Hypertarget{classShip_a8ceb3e7259c4d9e4487092fb0b0f7b1c}\label{classShip_a8ceb3e7259c4d9e4487092fb0b0f7b1c}} 
+\index{Ship@{Ship}!is\_alive@{is\_alive}}
+\index{is\_alive@{is\_alive}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{is\_alive()}{is\_alive()}}
+{\footnotesize\ttfamily bool Ship\+::is\+\_\+alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether ship has hp or not. 
+
+\mbox{\Hypertarget{classShip_a37ce4cdeba51c04adabd9bedd4319dde}\label{classShip_a37ce4cdeba51c04adabd9bedd4319dde}} 
+\index{Ship@{Ship}!is\_destroyed@{is\_destroyed}}
+\index{is\_destroyed@{is\_destroyed}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{is\_destroyed()}{is\_destroyed()}}
+{\footnotesize\ttfamily bool Ship\+::is\+\_\+destroyed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether ship destroyed or not. 
+
+\mbox{\Hypertarget{classShip_ace949c15ab5f3f469a460a1d92fde65b}\label{classShip_ace949c15ab5f3f469a460a1d92fde65b}} 
+\index{Ship@{Ship}!is\_safe@{is\_safe}}
+\index{is\_safe@{is\_safe}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{is\_safe()}{is\_safe()}}
+{\footnotesize\ttfamily bool Ship\+::is\+\_\+safe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether ship in safe mode or not. 
+
+\mbox{\Hypertarget{classShip_ac25f964ac0daaa02658a82fdcbcb6fba}\label{classShip_ac25f964ac0daaa02658a82fdcbcb6fba}} 
+\index{Ship@{Ship}!move@{move}}
+\index{move@{move}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Ship\+::move (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classShip}{Ship}} move func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time from last frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShip_a67973a8aa54ae778666b424b8b78574f}\label{classShip_a67973a8aa54ae778666b424b8b78574f}} 
+\index{Ship@{Ship}!respawn\_ship@{respawn\_ship}}
+\index{respawn\_ship@{respawn\_ship}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{respawn\_ship()}{respawn\_ship()}}
+{\footnotesize\ttfamily void Ship\+::respawn\+\_\+ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classShip}{Ship}} respawn func. 
+
+\mbox{\Hypertarget{classShip_a3ca1af018d5aa51d36955e42823aeb43}\label{classShip_a3ca1af018d5aa51d36955e42823aeb43}} 
+\index{Ship@{Ship}!rotate@{rotate}}
+\index{rotate@{rotate}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Ship\+::rotate (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{bool}]{left }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classShip}{Ship}} rotation func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & time from last frame \\
+\hline
+{\em left} & direction of rotation \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classShip_a2275602cc505a55f41893bbb20495a93}\label{classShip_a2275602cc505a55f41893bbb20495a93}} 
+\index{Ship@{Ship}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{destroyed}{destroyed}}
+{\footnotesize\ttfamily bool Ship\+::destroyed = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+does asteroid destroyed 
+
+\mbox{\Hypertarget{classShip_aa2d86cea2f0912918e0ab9d23cecb0b1}\label{classShip_aa2d86cea2f0912918e0ab9d23cecb0b1}} 
+\index{Ship@{Ship}!hp@{hp}}
+\index{hp@{hp}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{hp}{hp}}
+{\footnotesize\ttfamily int Ship\+::hp = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ship\textquotesingle{}s hp 
+
+\mbox{\Hypertarget{classShip_a0b702d5b8dc1b96439604fc492e15275}\label{classShip_a0b702d5b8dc1b96439604fc492e15275}} 
+\index{Ship@{Ship}!safe\_mode@{safe\_mode}}
+\index{safe\_mode@{safe\_mode}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{safe\_mode}{safe\_mode}}
+{\footnotesize\ttfamily bool Ship\+::safe\+\_\+mode = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+can asteroid be destroyed 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Ship_8h}{Ship.\+h}}\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Ship_8cpp}{Ship.\+cpp}}\end{DoxyCompactItemize}

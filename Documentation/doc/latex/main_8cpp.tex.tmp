@@ -1,0 +1,143 @@
+\hypertarget{main_8cpp}{}\doxysection{/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/main.cpp File Reference}
+\label{main_8cpp}\index{/home/vlad/CLionProjects/CPP\_Asteroids/main.cpp@{/home/vlad/CLionProjects/CPP\_Asteroids/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Objects/\+Ship.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Objects/\+Asteroid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Objects/\+Bullet.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::set$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{main_8cpp_a8e94ba2ee460f8ca946e939f6ce6e019}{get\+\_\+object\+\_\+copies}} (T obj)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{main_8cpp_a8946fe2e36daf6dd856ceee779cda25b}{draw\+\_\+object}} (sf\+::\+Render\+Window \&win, T \&obj)
+\item 
+void \mbox{\hyperlink{main_8cpp_ad8242845f613e58c8cb338f77dd56f80}{draw\+\_\+bullet}} (sf\+::\+Render\+Window \&win, \mbox{\hyperlink{classBullet}{Bullet}} \&obj)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\bool \mbox{\hyperlink{main_8cpp_a0c1da685efb1bba1251aacd76de7ed9c}{check\+\_\+collision}} (T1 \&obj1, T2 \&obj2)
+\item 
+void \mbox{\hyperlink{main_8cpp_ab634b82d500df5be0604cc53eabb1c1e}{split\+\_\+asteroid}} (vector$<$ \mbox{\hyperlink{classAsteroid}{Asteroid}} $>$ \&aas, \mbox{\hyperlink{classAsteroid}{Asteroid}} \&a)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{main_8cpp_a9649ab8139c4c2ea5c93625b30d92a05}{W\+I\+D\+TH}} = 1200
+\begin{DoxyCompactList}\small\item\em Screen width. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{main_8cpp_af728b7647e0b8c49832983a31f9a2e9b}{H\+E\+I\+G\+HT}} = 800
+\begin{DoxyCompactList}\small\item\em Screen height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a0c1da685efb1bba1251aacd76de7ed9c}\label{main_8cpp_a0c1da685efb1bba1251aacd76de7ed9c}} 
+\index{main.cpp@{main.cpp}!check\_collision@{check\_collision}}
+\index{check\_collision@{check\_collision}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_collision()}{check\_collision()}}
+{\footnotesize\ttfamily template$<$typename T1 , typename T2 $>$ \\
+bool check\+\_\+collision (\begin{DoxyParamCaption}\item[{T1 \&}]{obj1,  }\item[{T2 \&}]{obj2 }\end{DoxyParamCaption})}
+
+Function that checks collision between objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj1} & Game object (asteroid, ship or bullet) \\
+\hline
+{\em obj2} & Game object (asteroid, ship or bullet) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ad8242845f613e58c8cb338f77dd56f80}\label{main_8cpp_ad8242845f613e58c8cb338f77dd56f80}} 
+\index{main.cpp@{main.cpp}!draw\_bullet@{draw\_bullet}}
+\index{draw\_bullet@{draw\_bullet}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{draw\_bullet()}{draw\_bullet()}}
+{\footnotesize\ttfamily void draw\+\_\+bullet (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win,  }\item[{\mbox{\hyperlink{classBullet}{Bullet}} \&}]{obj }\end{DoxyParamCaption})}
+
+Draw bullets
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & game window \\
+\hline
+{\em obj} & Game object (asteroid or ship) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a8946fe2e36daf6dd856ceee779cda25b}\label{main_8cpp_a8946fe2e36daf6dd856ceee779cda25b}} 
+\index{main.cpp@{main.cpp}!draw\_object@{draw\_object}}
+\index{draw\_object@{draw\_object}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{draw\_object()}{draw\_object()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void draw\+\_\+object (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win,  }\item[{T \&}]{obj }\end{DoxyParamCaption})}
+
+Draw objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & game window \\
+\hline
+{\em obj} & Game object (asteroid or ship) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a8e94ba2ee460f8ca946e939f6ce6e019}\label{main_8cpp_a8e94ba2ee460f8ca946e939f6ce6e019}} 
+\index{main.cpp@{main.cpp}!get\_object\_copies@{get\_object\_copies}}
+\index{get\_object\_copies@{get\_object\_copies}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_object\_copies()}{get\_object\_copies()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::set$<$vector$<$float$>$ $>$ get\+\_\+object\+\_\+copies (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})}
+
+Creation of visible object\textquotesingle{}s copies func
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Game object (asteroid or ship) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main loop function \mbox{\Hypertarget{main_8cpp_ab634b82d500df5be0604cc53eabb1c1e}\label{main_8cpp_ab634b82d500df5be0604cc53eabb1c1e}} 
+\index{main.cpp@{main.cpp}!split\_asteroid@{split\_asteroid}}
+\index{split\_asteroid@{split\_asteroid}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{split\_asteroid()}{split\_asteroid()}}
+{\footnotesize\ttfamily void split\+\_\+asteroid (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classAsteroid}{Asteroid}} $>$ \&}]{aas,  }\item[{\mbox{\hyperlink{classAsteroid}{Asteroid}} \&}]{a }\end{DoxyParamCaption})}
+
+Spit asteroid after destruction
+
+
+\begin{DoxyParams}{Parameters}
+{\em aas} & asteroid array \\
+\hline
+{\em a} & origin asteroid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_af728b7647e0b8c49832983a31f9a2e9b}\label{main_8cpp_af728b7647e0b8c49832983a31f9a2e9b}} 
+\index{main.cpp@{main.cpp}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily const int H\+E\+I\+G\+HT = 800}
+
+
+
+Screen height. 
+
+\mbox{\Hypertarget{main_8cpp_a9649ab8139c4c2ea5c93625b30d92a05}\label{main_8cpp_a9649ab8139c4c2ea5c93625b30d92a05}} 
+\index{main.cpp@{main.cpp}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily const int W\+I\+D\+TH = 1200}
+
+
+
+Screen width. 
+

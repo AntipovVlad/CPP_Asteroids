@@ -1,0 +1,243 @@
+\hypertarget{classAsteroid}{}\doxysection{Asteroid Class Reference}
+\label{classAsteroid}\index{Asteroid@{Asteroid}}
+
+
+Game object \mbox{\hyperlink{classAsteroid}{Asteroid}} class.  
+
+
+
+
+{\ttfamily \#include $<$Asteroid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAsteroid_a8b294d11585595d419a669bb0078916e}{Asteroid}} (float W, float H)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAsteroid_ade5a5a187969478a402abe11f69448f7}{Asteroid}} (float W, float H, float en\+\_\+x, float en\+\_\+y, int max\+\_\+health)
+\begin{DoxyCompactList}\small\item\em Constructor for asteroids appeared from splitting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAsteroid_acc1971e2a1f2b10413b7c2087ac595f2}{move}} (float dt)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} move func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAsteroid_ac24b779abc9b31c5ca2ce560150f3cf7}{rotate}} (float dt)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} rotation func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAsteroid_a5876f530d1ea288a2471f5a31b08fd80}{make\+\_\+invalid}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} self-\/destruction func. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAsteroid_a510393d11a18a10ed7d6d11f7b936089}{gain\+\_\+damage}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} hp decrease func. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAsteroid_ac8d7e460d2f9be01a6cfac950c032667}{is\+\_\+valid}} () const
+\begin{DoxyCompactList}\small\item\em Checks whether asteroid has hp or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAsteroid_a9fbd353625817f93d3b6ed9a1159aa35}{get\+\_\+hp}} () const
+\begin{DoxyCompactList}\small\item\em Returns asteroid\textquotesingle{}s hp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAsteroid_a179c39f44a6ead6948c1288e2374c0db}{get\+\_\+hp\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Returns max asteroid\textquotesingle{}s hp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classAsteroid_aa5126cbbdf81803d5a916badd005d5f0}{vx}}
+\begin{DoxyCompactList}\small\item\em x vector coordinate \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classAsteroid_abc7b1acd42643f6c8c38614874f683c6}{vy}}
+\begin{DoxyCompactList}\small\item\em y vector coordinate \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAsteroid_ad52532de9f54384dd9fd835ba7d4d693}{valid}} = true
+\begin{DoxyCompactList}\small\item\em does asteroid exist \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAsteroid_aff6eb3d1d0e414b6a39a1fe4d4aa75b7}{hp}}
+\begin{DoxyCompactList}\small\item\em current asteroid\textquotesingle{}s hp \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAsteroid_ab77cedd8919026093bc0cae2bda61ec8}{hp\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em max asteroid\textquotesingle{}s hp \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Game object \mbox{\hyperlink{classAsteroid}{Asteroid}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroid_a8b294d11585595d419a669bb0078916e}\label{classAsteroid_a8b294d11585595d419a669bb0078916e}} 
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{Asteroid()}{Asteroid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Asteroid\+::\+Asteroid (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & width of screen \\
+\hline
+{\em H} & height of screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAsteroid_ade5a5a187969478a402abe11f69448f7}\label{classAsteroid_ade5a5a187969478a402abe11f69448f7}} 
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\index{Asteroid@{Asteroid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{Asteroid()}{Asteroid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Asteroid\+::\+Asteroid (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H,  }\item[{float}]{en\+\_\+x,  }\item[{float}]{en\+\_\+y,  }\item[{int}]{max\+\_\+health }\end{DoxyParamCaption})}
+
+
+
+Constructor for asteroids appeared from splitting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & width of screen \\
+\hline
+{\em H} & height of screen \\
+\hline
+{\em en\+\_\+x} & start x coordinate \\
+\hline
+{\em en\+\_\+y} & start y coordinate \\
+\hline
+{\em max\+\_\+health} & max heath of asteroid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroid_a510393d11a18a10ed7d6d11f7b936089}\label{classAsteroid_a510393d11a18a10ed7d6d11f7b936089}} 
+\index{Asteroid@{Asteroid}!gain\_damage@{gain\_damage}}
+\index{gain\_damage@{gain\_damage}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{gain\_damage()}{gain\_damage()}}
+{\footnotesize\ttfamily void Asteroid\+::gain\+\_\+damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} hp decrease func. 
+
+\mbox{\Hypertarget{classAsteroid_a9fbd353625817f93d3b6ed9a1159aa35}\label{classAsteroid_a9fbd353625817f93d3b6ed9a1159aa35}} 
+\index{Asteroid@{Asteroid}!get\_hp@{get\_hp}}
+\index{get\_hp@{get\_hp}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{get\_hp()}{get\_hp()}}
+{\footnotesize\ttfamily int Asteroid\+::get\+\_\+hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns asteroid\textquotesingle{}s hp. 
+
+\begin{DoxyReturn}{Returns}
+param {\itshape hp} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAsteroid_a179c39f44a6ead6948c1288e2374c0db}\label{classAsteroid_a179c39f44a6ead6948c1288e2374c0db}} 
+\index{Asteroid@{Asteroid}!get\_hp\_size@{get\_hp\_size}}
+\index{get\_hp\_size@{get\_hp\_size}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{get\_hp\_size()}{get\_hp\_size()}}
+{\footnotesize\ttfamily int Asteroid\+::get\+\_\+hp\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns max asteroid\textquotesingle{}s hp. 
+
+\begin{DoxyReturn}{Returns}
+param {\itshape hp\+\_\+size} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAsteroid_ac8d7e460d2f9be01a6cfac950c032667}\label{classAsteroid_ac8d7e460d2f9be01a6cfac950c032667}} 
+\index{Asteroid@{Asteroid}!is\_valid@{is\_valid}}
+\index{is\_valid@{is\_valid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{is\_valid()}{is\_valid()}}
+{\footnotesize\ttfamily bool Asteroid\+::is\+\_\+valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks whether asteroid has hp or not. 
+
+\begin{DoxyReturn}{Returns}
+param {\itshape valid} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAsteroid_a5876f530d1ea288a2471f5a31b08fd80}\label{classAsteroid_a5876f530d1ea288a2471f5a31b08fd80}} 
+\index{Asteroid@{Asteroid}!make\_invalid@{make\_invalid}}
+\index{make\_invalid@{make\_invalid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{make\_invalid()}{make\_invalid()}}
+{\footnotesize\ttfamily void Asteroid\+::make\+\_\+invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} self-\/destruction func. 
+
+\mbox{\Hypertarget{classAsteroid_acc1971e2a1f2b10413b7c2087ac595f2}\label{classAsteroid_acc1971e2a1f2b10413b7c2087ac595f2}} 
+\index{Asteroid@{Asteroid}!move@{move}}
+\index{move@{move}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Asteroid\+::move (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} move func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time from last frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAsteroid_ac24b779abc9b31c5ca2ce560150f3cf7}\label{classAsteroid_ac24b779abc9b31c5ca2ce560150f3cf7}} 
+\index{Asteroid@{Asteroid}!rotate@{rotate}}
+\index{rotate@{rotate}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Asteroid\+::rotate (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classAsteroid}{Asteroid}} rotation func. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time from last frame \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroid_aff6eb3d1d0e414b6a39a1fe4d4aa75b7}\label{classAsteroid_aff6eb3d1d0e414b6a39a1fe4d4aa75b7}} 
+\index{Asteroid@{Asteroid}!hp@{hp}}
+\index{hp@{hp}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{hp}{hp}}
+{\footnotesize\ttfamily int Asteroid\+::hp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+current asteroid\textquotesingle{}s hp 
+
+\mbox{\Hypertarget{classAsteroid_ab77cedd8919026093bc0cae2bda61ec8}\label{classAsteroid_ab77cedd8919026093bc0cae2bda61ec8}} 
+\index{Asteroid@{Asteroid}!hp\_size@{hp\_size}}
+\index{hp\_size@{hp\_size}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{hp\_size}{hp\_size}}
+{\footnotesize\ttfamily int Asteroid\+::hp\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+max asteroid\textquotesingle{}s hp 
+
+\mbox{\Hypertarget{classAsteroid_ad52532de9f54384dd9fd835ba7d4d693}\label{classAsteroid_ad52532de9f54384dd9fd835ba7d4d693}} 
+\index{Asteroid@{Asteroid}!valid@{valid}}
+\index{valid@{valid}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{valid}{valid}}
+{\footnotesize\ttfamily bool Asteroid\+::valid = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+does asteroid exist 
+
+\mbox{\Hypertarget{classAsteroid_aa5126cbbdf81803d5a916badd005d5f0}\label{classAsteroid_aa5126cbbdf81803d5a916badd005d5f0}} 
+\index{Asteroid@{Asteroid}!vx@{vx}}
+\index{vx@{vx}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{vx}{vx}}
+{\footnotesize\ttfamily float Asteroid\+::vx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+x vector coordinate 
+
+\mbox{\Hypertarget{classAsteroid_abc7b1acd42643f6c8c38614874f683c6}\label{classAsteroid_abc7b1acd42643f6c8c38614874f683c6}} 
+\index{Asteroid@{Asteroid}!vy@{vy}}
+\index{vy@{vy}!Asteroid@{Asteroid}}
+\doxysubsubsection{\texorpdfstring{vy}{vy}}
+{\footnotesize\ttfamily float Asteroid\+::vy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+y vector coordinate 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Asteroid_8h}{Asteroid.\+h}}\item 
+/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+Objects/\mbox{\hyperlink{Asteroid_8cpp}{Asteroid.\+cpp}}\end{DoxyCompactItemize}
