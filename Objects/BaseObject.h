@@ -1,5 +1,4 @@
-#ifndef ASTEROIDS_BASEOBJECT_H
-#define ASTEROIDS_BASEOBJECT_H
+#pragma once
 
 #include <vector>
 using std::vector;
@@ -25,6 +24,11 @@ public:
      * @param H height of screen
      */
     BaseObject(float W, float H);
+
+    BaseObject(BaseObject && bs) noexcept : h(bs.h), w(bs.w), x(bs.x), y(bs.y), angle(bs.angle), speed(bs.speed), dangle(bs.dangle), size(bs.size), dots(bs.dots) {}
+    BaseObject(BaseObject & bs) : h(bs.h), w(bs.w), x(bs.x), y(bs.y), angle(bs.angle), speed(bs.speed), dangle(bs.dangle), size(bs.size), dots(bs.dots) {}
+    BaseObject& operator=(BaseObject & bs) = default;
+    BaseObject& operator=(BaseObject && bs) = default;
 
     /**
      * @brief Asteroid move func
@@ -72,7 +76,14 @@ public:
      * @brief Returns object's size
      */
     int get_size() const;
+
+    /**
+     * @brief Returns screen's height
+     */
+    float get_h() const;
+
+    /**
+     * @brief Returns screen's width
+     */
+    float get_w() const;
 };
-
-
-#endif //ASTEROIDS_BASEOBJECT_H

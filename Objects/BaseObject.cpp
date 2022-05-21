@@ -37,8 +37,6 @@ vector<vector<float>> BaseObject::gen_true_dots(float d_x, float d_y) {
     }
 
     return new_dots;
-
-    return new_dots;
 }
 
 bool BaseObject::dot_inside(vector<float> center, float x0, float y0) {
@@ -71,3 +69,10 @@ int BaseObject::get_size() const {
     return size;
 }
 
+float BaseObject::get_h() const {
+    return h;
+}
+
+float BaseObject::get_w() const {
+    return w;
+}

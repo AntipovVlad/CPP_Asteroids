@@ -1,5 +1,4 @@
-#ifndef ASTEROIDS_SHIP_H
-#define ASTEROIDS_SHIP_H
+#pragma once
 
 #include <SFML/Graphics.hpp>
 #include "BaseObject.h"
@@ -73,6 +72,3 @@ public:
      */
     float get_angle() const;
 };
-
-
-#endif //ASTEROIDS_SHIP_H

@@ -1,5 +1,4 @@
-#ifndef ASTEROIDS_BULLET_H
-#define ASTEROIDS_BULLET_H
+#pragma once
 
 #include "BaseObject.h"
 
@@ -21,6 +20,12 @@ public:
      */
     Bullet(float W, float H, vector<float> xy, float en_v);
 
+    Bullet(Bullet & b) : BaseObject(b), vx(b.vx), vy(b.vy), valid(b.valid) {}
+    Bullet(Bullet && b) noexcept : BaseObject(b), vx(b.vx), vy(b.vy), valid(b.valid) {}
+    Bullet& operator=(Bullet & ast);
+    Bullet& operator=(Bullet && ast) noexcept;
+    ~Bullet() = default;
+
     /**
      * @brief Bullet move func
      * @param dt Time from last frame
@@ -38,6 +43,3 @@ public:
      */
     bool is_valid();
 };
-
-
-#endif //ASTEROIDS_BULLET_H

@@ -1,6 +1,4 @@
-#ifndef ASTEROIDS_ASTEROID_H
-#define ASTEROIDS_ASTEROID_H
-
+#pragma once
 #include "BaseObject.h"
 
 /**
@@ -30,6 +28,12 @@ public:
      * @param max_health max heath of asteroid
      */
     Asteroid(float W, float H, float en_x, float en_y, int max_health);
+
+    Asteroid(Asteroid & ast) : BaseObject(ast), vx(ast.vx), vy(ast.vy), hp(ast.hp), hp_size(ast.hp_size), valid(ast.valid) {}
+    Asteroid(Asteroid && ast) noexcept : BaseObject(ast), vx(ast.vx), vy(ast.vy), hp(ast.hp), hp_size(ast.hp_size), valid(ast.valid) {}
+    Asteroid& operator=(Asteroid & ast);
+    Asteroid& operator=(Asteroid && ast) noexcept;
+    ~Asteroid() = default;
 
     /**
      * @brief Asteroid move func
@@ -71,6 +75,3 @@ public:
      */
     int get_hp_size() const;
 };
-
-
-#endif //ASTEROIDS_ASTEROID_H

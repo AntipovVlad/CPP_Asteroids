@@ -21,3 +21,25 @@ bool Bullet::is_valid() {
 void Bullet::make_invalid() {
     valid = false;
 }
+
+Bullet & Bullet::operator=(Bullet &b) {
+    if (this != &b) {
+        BaseObject::operator=(b);
+        vx = b.vx;
+        vy = b.vy;
+        valid = b.valid;
+    }
+
+    return *this;
+}
+
+Bullet & Bullet::operator=(Bullet &&b)  noexcept {
+    if (this != &b) {
+        BaseObject::operator=(b);
+        vx = b.vx;
+        vy = b.vy;
+        valid = b.valid;
+    }
+
+    return *this;
+}

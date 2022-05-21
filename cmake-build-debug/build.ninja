@@ -51,43 +51,45 @@ build cmake_object_order_depends_target_Asteroids: phony || CMakeFiles/Asteroids
 
 build CMakeFiles/Asteroids.dir/main.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/main.cpp || cmake_object_order_depends_target_Asteroids
   DEP_FILE = CMakeFiles/Asteroids.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
-  TARGET_PDB = Asteroids.pdb
+
+build CMakeFiles/Asteroids.dir/View/main_funcs.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/View/main_funcs.cpp || cmake_object_order_depends_target_Asteroids
+  DEP_FILE = CMakeFiles/Asteroids.dir/View/main_funcs.cpp.o.d
+  FLAGS = -g -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/Asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/View
+
+build CMakeFiles/Asteroids.dir/View/main_screen_out.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/View/main_screen_out.cpp || cmake_object_order_depends_target_Asteroids
+  DEP_FILE = CMakeFiles/Asteroids.dir/View/main_screen_out.cpp.o.d
+  FLAGS = -g -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/Asteroids.dir
+  OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/View
 
 build CMakeFiles/Asteroids.dir/Objects/Ship.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Ship.cpp || cmake_object_order_depends_target_Asteroids
   DEP_FILE = CMakeFiles/Asteroids.dir/Objects/Ship.cpp.o.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/Objects
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
-  TARGET_PDB = Asteroids.pdb
 
 build CMakeFiles/Asteroids.dir/Objects/BaseObject.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/BaseObject.cpp || cmake_object_order_depends_target_Asteroids
   DEP_FILE = CMakeFiles/Asteroids.dir/Objects/BaseObject.cpp.o.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/Objects
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
-  TARGET_PDB = Asteroids.pdb
 
 build CMakeFiles/Asteroids.dir/Objects/Asteroid.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Asteroid.cpp || cmake_object_order_depends_target_Asteroids
   DEP_FILE = CMakeFiles/Asteroids.dir/Objects/Asteroid.cpp.o.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/Objects
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
-  TARGET_PDB = Asteroids.pdb
 
 build CMakeFiles/Asteroids.dir/Objects/Bullet.cpp.o: CXX_COMPILER__Asteroids_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Bullet.cpp || cmake_object_order_depends_target_Asteroids
   DEP_FILE = CMakeFiles/Asteroids.dir/Objects/Bullet.cpp.o.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   OBJECT_FILE_DIR = CMakeFiles/Asteroids.dir/Objects
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
-  TARGET_PDB = Asteroids.pdb
 
 
 # =============================================================================
@@ -97,15 +99,26 @@ build CMakeFiles/Asteroids.dir/Objects/Bullet.cpp.o: CXX_COMPILER__Asteroids_Deb
 #############################################
 # Link the executable Asteroids
 
-build Asteroids: CXX_EXECUTABLE_LINKER__Asteroids_Debug CMakeFiles/Asteroids.dir/main.cpp.o CMakeFiles/Asteroids.dir/Objects/Ship.cpp.o CMakeFiles/Asteroids.dir/Objects/BaseObject.cpp.o CMakeFiles/Asteroids.dir/Objects/Asteroid.cpp.o CMakeFiles/Asteroids.dir/Objects/Bullet.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build Asteroids: CXX_EXECUTABLE_LINKER__Asteroids_Debug CMakeFiles/Asteroids.dir/main.cpp.o CMakeFiles/Asteroids.dir/View/main_funcs.cpp.o CMakeFiles/Asteroids.dir/View/main_screen_out.cpp.o CMakeFiles/Asteroids.dir/Objects/Ship.cpp.o CMakeFiles/Asteroids.dir/Objects/BaseObject.cpp.o CMakeFiles/Asteroids.dir/Objects/Asteroid.cpp.o CMakeFiles/Asteroids.dir/Objects/Bullet.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/Asteroids.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/Asteroids.dir/
   TARGET_FILE = Asteroids
-  TARGET_PDB = Asteroids.pdb
+  TARGET_PDB = Asteroids.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug && /snap/clion/190/bin/cmake/linux/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -132,7 +145,188 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/vlad/CLionProjects/CPP_Asteroids/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target doctest
+
+
+#############################################
+# Order-only phony target for doctest
+
+build cmake_object_order_depends_target_doctest: phony || Doctest/CMakeFiles/doctest.dir
+
+build Doctest/CMakeFiles/doctest.dir/doctest.cpp.o: CXX_COMPILER__doctest_Debug /home/vlad/CLionProjects/CPP_Asteroids/Doctest/doctest.cpp || cmake_object_order_depends_target_doctest
+  DEP_FILE = Doctest/CMakeFiles/doctest.dir/doctest.cpp.o.d
+  FLAGS = -g -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Doctest/CMakeFiles/doctest.dir
+  OBJECT_FILE_DIR = Doctest/CMakeFiles/doctest.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target doctest
+
+
+#############################################
+# Link the static library Doctest/libdoctest.a
+
+build Doctest/libdoctest.a: CXX_STATIC_LIBRARY_LINKER__doctest_Debug Doctest/CMakeFiles/doctest.dir/doctest.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Doctest/CMakeFiles/doctest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Doctest/libdoctest.a
+  TARGET_PDB = doctest.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build Doctest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Doctest && /snap/clion/190/bin/cmake/linux/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build Doctest/test: phony Doctest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Doctest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Doctest && /snap/clion/190/bin/cmake/linux/bin/ccmake -S/home/vlad/CLionProjects/CPP_Asteroids -B/home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build Doctest/edit_cache: phony Doctest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Doctest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Doctest && /snap/clion/190/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/vlad/CLionProjects/CPP_Asteroids -B/home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Doctest/rebuild_cache: phony Doctest/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/vlad/CLionProjects/CPP_Asteroids/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target project_test
+
+
+#############################################
+# Order-only phony target for project_test
+
+build cmake_object_order_depends_target_project_test: phony || cmake_object_order_depends_target_doctest
+
+build Testing/CMakeFiles/project_test.dir/__/Objects/Asteroid.cpp.o: CXX_COMPILER__project_test_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Asteroid.cpp || cmake_object_order_depends_target_project_test
+  DEP_FILE = Testing/CMakeFiles/project_test.dir/__/Objects/Asteroid.cpp.o.d
+  FLAGS = -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  OBJECT_FILE_DIR = Testing/CMakeFiles/project_test.dir/__/Objects
+
+build Testing/CMakeFiles/project_test.dir/__/Objects/BaseObject.cpp.o: CXX_COMPILER__project_test_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/BaseObject.cpp || cmake_object_order_depends_target_project_test
+  DEP_FILE = Testing/CMakeFiles/project_test.dir/__/Objects/BaseObject.cpp.o.d
+  FLAGS = -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  OBJECT_FILE_DIR = Testing/CMakeFiles/project_test.dir/__/Objects
+
+build Testing/CMakeFiles/project_test.dir/__/Objects/Bullet.cpp.o: CXX_COMPILER__project_test_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Bullet.cpp || cmake_object_order_depends_target_project_test
+  DEP_FILE = Testing/CMakeFiles/project_test.dir/__/Objects/Bullet.cpp.o.d
+  FLAGS = -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  OBJECT_FILE_DIR = Testing/CMakeFiles/project_test.dir/__/Objects
+
+build Testing/CMakeFiles/project_test.dir/__/Objects/Ship.cpp.o: CXX_COMPILER__project_test_Debug /home/vlad/CLionProjects/CPP_Asteroids/Objects/Ship.cpp || cmake_object_order_depends_target_project_test
+  DEP_FILE = Testing/CMakeFiles/project_test.dir/__/Objects/Ship.cpp.o.d
+  FLAGS = -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  OBJECT_FILE_DIR = Testing/CMakeFiles/project_test.dir/__/Objects
+
+build Testing/CMakeFiles/project_test.dir/test.cpp.o: CXX_COMPILER__project_test_Debug /home/vlad/CLionProjects/CPP_Asteroids/Testing/test.cpp || cmake_object_order_depends_target_project_test
+  DEP_FILE = Testing/CMakeFiles/project_test.dir/test.cpp.o.d
+  FLAGS = -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++2a
+  INCLUDES = -I/home/vlad/CLionProjects/CPP_Asteroids/Doctest
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  OBJECT_FILE_DIR = Testing/CMakeFiles/project_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target project_test
+
+
+#############################################
+# Link the executable Testing/project_test
+
+build Testing/project_test: CXX_EXECUTABLE_LINKER__project_test_Debug Testing/CMakeFiles/project_test.dir/__/Objects/Asteroid.cpp.o Testing/CMakeFiles/project_test.dir/__/Objects/BaseObject.cpp.o Testing/CMakeFiles/project_test.dir/__/Objects/Bullet.cpp.o Testing/CMakeFiles/project_test.dir/__/Objects/Ship.cpp.o Testing/CMakeFiles/project_test.dir/test.cpp.o | Doctest/libdoctest.a || Doctest/libdoctest.a
+  FLAGS = -g
+  LINK_LIBRARIES = Doctest/libdoctest.a
+  OBJECT_DIR = Testing/CMakeFiles/project_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Testing/project_test
+  TARGET_PDB = project_test.dbg
+
+
+#############################################
+# Utility command for test
+
+build Testing/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Testing && /snap/clion/190/bin/cmake/linux/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build Testing/test: phony Testing/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Testing/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Testing && /snap/clion/190/bin/cmake/linux/bin/ccmake -S/home/vlad/CLionProjects/CPP_Asteroids -B/home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build Testing/edit_cache: phony Testing/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Testing/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Testing && /snap/clion/190/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/vlad/CLionProjects/CPP_Asteroids -B/home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Testing/rebuild_cache: phony Testing/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build doctest: phony Doctest/libdoctest.a
+
+build libdoctest.a: phony Doctest/libdoctest.a
+
+build project_test: phony Testing/project_test
 
 # =============================================================================
 # Folder targets.
@@ -142,7 +336,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug
 
-build all: phony Asteroids
+build all: phony Asteroids Doctest/all Testing/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Doctest
+
+build Doctest/all: phony Doctest/libdoctest.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/vlad/CLionProjects/CPP_Asteroids/cmake-build-debug/Testing
+
+build Testing/all: phony Testing/project_test
 
 # =============================================================================
 # Built-in targets
@@ -151,14 +359,14 @@ build all: phony Asteroids
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Doctest/CMakeLists.txt ../Testing/CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Doctest/CMakeLists.txt ../Testing/CMakeLists.txt ../cmake/CompilerWarnings.cmake ../cmake/StandardProjectSettings.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,127 +1,21 @@
 #include <iostream>
 #include <vector>
-#include "Objects/Ship.h"
-#include "Objects/Asteroid.h"
-#include "Objects/Bullet.h"
-#include <SFML/Graphics.hpp>
-#include <set>
 #include <chrono>
 #include <cmath>
+
+/*#include "Objects/Ship.h"
+#include "Objects/Asteroid.h"
+#include "Objects/Bullet.h"*/
+
+#include "View/main_funcs.h"
+#include "View/main_screen_out.h"
+
+#include <SFML/Graphics.hpp>
 
 using std::vector;
 
 const int WIDTH = 1200; //!< Screen width
 const int HEIGHT = 800; //!< Screen height
-
-/**
- * Creation of visible object's copies func
- *
- * @param obj Game object (asteroid or ship)
- */
-template<typename T>
-std::set<vector<float>> get_object_copies(T obj) {
-    float x = obj.get_x();
-    float y = obj.get_y();
-
-    std::set<vector<float>> delta {{x, y}};
-
-    for (auto &c : obj.gen_virtual_dots(x, y)) {
-        if (c[1] < 0) delta.insert({x, (float)HEIGHT + y});
-        if (c[0] < 0) delta.insert({(float)WIDTH + x, y});
-        if (c[1] > (float)HEIGHT) delta.insert({x, -(float)HEIGHT + y});
-        if (c[0] > (float)WIDTH) delta.insert({-(float)WIDTH + x, y});
-    }
-
-    return delta;
-}
-
-/**
- * Draw objects
- *
- * @param win game window
- * @param obj Game object (asteroid or ship)
- */
-template<typename T>
-void draw_object(sf::RenderWindow &win, T& obj) {
-    float x = obj.get_x();
-    float y = obj.get_y();
-    int size = obj.get_size();
-    int i = 0, l = 0;
-
-    std::set<vector<float>> delta = get_object_copies(obj);
-
-    vector<sf::VertexArray> lines_arr(delta.size());
-    for (int j = 0; j < delta.size(); j++) {
-        sf::VertexArray lines(sf::LinesStrip, size);
-        lines_arr[j] = lines;
-    }
-
-    for (auto &d : delta) {
-        i = 0;
-
-        for (auto &dot : obj.gen_virtual_dots(d[0], d[1]))
-            lines_arr[l][i++].position = sf::Vector2f(dot[0], dot[1]);
-
-        lines_arr[l][i].position = lines_arr[l][0].position;
-
-        win.draw(lines_arr[l]);
-
-        l++;
-    }
-}
-
-/**
- * Draw bullets
- *
- * @param win game window
- * @param obj Game object (asteroid or ship)
- */
-void draw_bullet(sf::RenderWindow &win, Bullet& obj) {
-    sf::CircleShape b;
-    b.setRadius(1);
-    b.setPosition(obj.get_x(), obj.get_y());
-    b.setFillColor(sf::Color::Red);
-    b.setOutlineColor(sf::Color::Red);
-    win.draw(b);
-}
-
-/**
- * Function that checks collision between objects
- *
- * @param obj1 Game object (asteroid, ship or bullet)
- * @param obj2 Game object (asteroid, ship or bullet)
- */
-template<typename T1, typename T2>
-bool check_collision(T1& obj1, T2& obj2) {
-    for (auto & dc : get_object_copies(obj1))
-        for (auto & d : obj2.gen_true_dots(obj2.get_x(), obj2.get_y()))
-            if (obj1.dot_inside(dc, d[0], d[1]))
-                return true;
-
-    for (auto & dc : get_object_copies(obj2))
-        for (auto & d : obj1.gen_true_dots(obj1.get_x(), obj1.get_y()))
-            if (obj2.dot_inside(dc, d[0], d[1]))
-                return true;
-
-
-    return false;
-}
-
-/**
- * Spit asteroid after destruction
- *
- * @param aas asteroid array
- * @param a origin asteroid
- */
-void split_asteroid(vector<Asteroid> & aas, Asteroid & a) {
-    a.make_invalid();
-
-    if (a.get_hp_size() == 1)
-        return;
-
-    aas.emplace_back(Asteroid{(float)WIDTH, (float)HEIGHT, a.get_x(), a.get_y(), a.get_hp_size() - 1});
-    aas.emplace_back(Asteroid{(float)WIDTH, (float)HEIGHT, a.get_x(), a.get_y(), a.get_hp_size() - 1});
-}
 
 /**
  * Main loop function
@@ -232,7 +126,7 @@ int main() {
         for (auto &a: asteroids) {
             a.move(dt);
             a.rotate(dt);
-            draw_object(window, a);
+            draw_object(window, (BaseObject &)a);
         }
 
         for (auto &b : bullets) {
@@ -241,7 +135,7 @@ int main() {
         }
 
         if (!ship.is_destroyed()) {
-            draw_object(window, ship);
+            draw_object(window, (BaseObject &)ship);
 
             if (ship.is_safe() && std::chrono::steady_clock::now() > safe_time_start + std::chrono::seconds(2))
                 ship.change_safe_mode();

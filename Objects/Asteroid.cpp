@@ -1,7 +1,6 @@
 #include "Asteroid.h"
 #include <random>
 #include <cmath>
-#include <iostream>
 
 Asteroid::Asteroid(float W, float H): BaseObject(W, H) {
     size = 7;
@@ -48,8 +47,8 @@ Asteroid::Asteroid(float W, float H, float en_x, float en_y, int max_health) : A
 
     x = en_x;
     y = en_y;
-    hp = s;
-    hp_size = s;
+    hp = max_health;
+    hp_size = max_health;
 
     dots = {
             {0.f, -16.f},
@@ -98,4 +97,30 @@ int Asteroid::get_hp() const {
 
 int Asteroid::get_hp_size() const {
     return hp_size;
+}
+
+Asteroid& Asteroid::operator=(Asteroid &ast) {
+    if (this != &ast) {
+        BaseObject::operator=(ast);
+        vx = ast.vx;
+        vy = ast.vy;
+        hp = ast.hp;
+        hp_size = ast.hp_size;
+        valid = ast.valid;
+    }
+
+    return *this;
+}
+
+Asteroid & Asteroid::operator=(Asteroid &&ast)  noexcept {
+    if (this != &ast) {
+        BaseObject::operator=(ast);
+        vx = ast.vx;
+        vy = ast.vy;
+        hp = ast.hp;
+        hp_size = ast.hp_size;
+        valid = ast.valid;
+    }
+
+    return *this;
 }
