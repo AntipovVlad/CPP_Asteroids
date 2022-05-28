@@ -14,6 +14,14 @@ Base class for game objects.
 \item 
 \mbox{\hyperlink{classBaseObject_a277a6f0e843bd93e43238329e6d507be}{Base\+Object}} (float W, float H)
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBaseObject_aaf620b73e44581c6a51c9681f87e962f}{Base\+Object}} (\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&\&bs) noexcept
+\item 
+\mbox{\hyperlink{classBaseObject_a9224aa975a685c3f27f71fdf2e2f59e4}{Base\+Object}} (\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&bs)
+\item 
+\mbox{\hyperlink{classBaseObject}{Base\+Object}} \& \mbox{\hyperlink{classBaseObject_abf21904a1222de80026e609c3229cb9b}{operator=}} (\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&bs)=default
+\item 
+\mbox{\hyperlink{classBaseObject}{Base\+Object}} \& \mbox{\hyperlink{classBaseObject_a9b75b083599f0c152c408a5e0f08b576}{operator=}} (\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&\&bs)=default
+\item 
 virtual void \mbox{\hyperlink{classBaseObject_ac243a7f83f8a6ac699ba521e9cc136b5}{move}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} move func. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}{rotate}} ()
@@ -29,7 +37,11 @@ float \mbox{\hyperlink{classBaseObject_a023e8161a39442b8b0688a7434b07842}{get\+\
 float \mbox{\hyperlink{classBaseObject_af77ef57809ab74f39ccbd8f5573c86d0}{get\+\_\+y}} () const
 \begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s y coordinate. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classBaseObject_a965515917ad480c5da934ef8739408a2}{get\+\_\+size}} () const
-\begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns object\textquotesingle{}s size. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_a830ef7510db7643c78e4c0c3d0ce59f2}{get\+\_\+h}} () const
+\begin{DoxyCompactList}\small\item\em Returns screen\textquotesingle{}s height. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBaseObject_aeda21865a87f887b2735d22774ba9a60}{get\+\_\+w}} () const
+\begin{DoxyCompactList}\small\item\em Returns screen\textquotesingle{}s width. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,7 +72,7 @@ Base class for game objects.
 \mbox{\Hypertarget{classBaseObject_a277a6f0e843bd93e43238329e6d507be}\label{classBaseObject_a277a6f0e843bd93e43238329e6d507be}} 
 \index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
 \index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
-\doxysubsubsection{\texorpdfstring{BaseObject()}{BaseObject()}}
+\doxysubsubsection{\texorpdfstring{BaseObject()}{BaseObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Base\+Object\+::\+Base\+Object (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H }\end{DoxyParamCaption})}
 
 
@@ -74,6 +86,18 @@ Default constructor.
 {\em H} & height of screen \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classBaseObject_aaf620b73e44581c6a51c9681f87e962f}\label{classBaseObject_aaf620b73e44581c6a51c9681f87e962f}} 
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{BaseObject()}{BaseObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Base\+Object\+::\+Base\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&\&}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classBaseObject_a9224aa975a685c3f27f71fdf2e2f59e4}\label{classBaseObject_a9224aa975a685c3f27f71fdf2e2f59e4}} 
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\index{BaseObject@{BaseObject}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{BaseObject()}{BaseObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Base\+Object\+::\+Base\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -130,6 +154,16 @@ Default constructor.
 {\em d\+\_\+y} & y center coordinate \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classBaseObject_a830ef7510db7643c78e4c0c3d0ce59f2}\label{classBaseObject_a830ef7510db7643c78e4c0c3d0ce59f2}} 
+\index{BaseObject@{BaseObject}!get\_h@{get\_h}}
+\index{get\_h@{get\_h}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{get\_h()}{get\_h()}}
+{\footnotesize\ttfamily float Base\+Object\+::get\+\_\+h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns screen\textquotesingle{}s height. 
+
 \mbox{\Hypertarget{classBaseObject_a965515917ad480c5da934ef8739408a2}\label{classBaseObject_a965515917ad480c5da934ef8739408a2}} 
 \index{BaseObject@{BaseObject}!get\_size@{get\_size}}
 \index{get\_size@{get\_size}!BaseObject@{BaseObject}}
@@ -139,6 +173,16 @@ Default constructor.
 
 
 Returns object\textquotesingle{}s size. 
+
+\mbox{\Hypertarget{classBaseObject_aeda21865a87f887b2735d22774ba9a60}\label{classBaseObject_aeda21865a87f887b2735d22774ba9a60}} 
+\index{BaseObject@{BaseObject}!get\_w@{get\_w}}
+\index{get\_w@{get\_w}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{get\_w()}{get\_w()}}
+{\footnotesize\ttfamily float Base\+Object\+::get\+\_\+w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns screen\textquotesingle{}s width. 
 
 \mbox{\Hypertarget{classBaseObject_a023e8161a39442b8b0688a7434b07842}\label{classBaseObject_a023e8161a39442b8b0688a7434b07842}} 
 \index{BaseObject@{BaseObject}!get\_x@{get\_x}}
@@ -169,6 +213,18 @@ Returns object\textquotesingle{}s y coordinate.
 
 
 \mbox{\hyperlink{classAsteroid}{Asteroid}} move func. 
+
+\mbox{\Hypertarget{classBaseObject_a9b75b083599f0c152c408a5e0f08b576}\label{classBaseObject_a9b75b083599f0c152c408a5e0f08b576}} 
+\index{BaseObject@{BaseObject}!operator=@{operator=}}
+\index{operator=@{operator=}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBaseObject}{Base\+Object}}\& Base\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&\&}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classBaseObject_abf21904a1222de80026e609c3229cb9b}\label{classBaseObject_abf21904a1222de80026e609c3229cb9b}} 
+\index{BaseObject@{BaseObject}!operator=@{operator=}}
+\index{operator=@{operator=}!BaseObject@{BaseObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBaseObject}{Base\+Object}}\& Base\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 \mbox{\Hypertarget{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}\label{classBaseObject_a6287261fb649ffa3c3d2dd84253dc9f1}} 
 \index{BaseObject@{BaseObject}!rotate@{rotate}}

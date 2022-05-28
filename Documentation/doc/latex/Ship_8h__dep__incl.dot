@@ -5,7 +5,14 @@ digraph "/home/vlad/CLionProjects/CPP_Asteroids/Objects/Ship.h"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/Objects/Ship.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip=" "];
-  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node3 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/Objects\l/Ship.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ship_8cpp.html",tooltip=" "];
+  Node2 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/View/main\l_funcs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__funcs_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/View/main\l_funcs.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__funcs_8cpp.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/View/main\l_screen_out.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__screen__out_8cpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/View/main\l_screen_out.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__screen__out_8h.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="/home/vlad/CLionProjects\l/CPP_Asteroids/Objects\l/Ship.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ship_8cpp.html",tooltip=" "];
 }

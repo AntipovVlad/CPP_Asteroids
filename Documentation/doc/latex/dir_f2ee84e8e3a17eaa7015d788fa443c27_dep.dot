@@ -1,0 +1,8 @@
+digraph "/home/vlad/CLionProjects/CPP_Asteroids/View" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_f2ee84e8e3a17eaa7015d788fa443c27 [shape=box, label="View", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f2ee84e8e3a17eaa7015d788fa443c27.html"];
+  dir_5dafd4660615c7e05a84a5ee9d9fd12b [shape=box label="Objects" URL="dir_5dafd4660615c7e05a84a5ee9d9fd12b.html"];
+  dir_f2ee84e8e3a17eaa7015d788fa443c27->dir_5dafd4660615c7e05a84a5ee9d9fd12b [headlabel="6", labeldistance=1.5 headhref="dir_000001_000000.html"];
+}

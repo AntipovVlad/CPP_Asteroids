@@ -1,0 +1,60 @@
+\hypertarget{main__funcs_8cpp}{}\doxysection{/home/vlad/\+C\+Lion\+Projects/\+C\+P\+P\+\_\+\+Asteroids/\+View/main\+\_\+funcs.cpp File Reference}
+\label{main__funcs_8cpp}\index{/home/vlad/CLionProjects/CPP\_Asteroids/View/main\_funcs.cpp@{/home/vlad/CLionProjects/CPP\_Asteroids/View/main\_funcs.cpp}}
+{\ttfamily \#include \char`\"{}main\+\_\+funcs.\+h\char`\"{}}\newline
+Include dependency graph for main\+\_\+funcs.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ vector$<$ float $>$ $>$ \mbox{\hyperlink{main__funcs_8cpp_ad08cf1e0c21e503c74952f5de844800c}{get\+\_\+object\+\_\+copies}} (\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&obj)
+\item 
+bool \mbox{\hyperlink{main__funcs_8cpp_a0d534b9eb0852b845e04ad0082a496e1}{check\+\_\+collision}} (\mbox{\hyperlink{classAsteroid}{Asteroid}} \&a, \mbox{\hyperlink{classShip}{Ship}} \&s)
+\item 
+void \mbox{\hyperlink{main__funcs_8cpp_ab634b82d500df5be0604cc53eabb1c1e}{split\+\_\+asteroid}} (vector$<$ \mbox{\hyperlink{classAsteroid}{Asteroid}} $>$ \&aas, \mbox{\hyperlink{classAsteroid}{Asteroid}} \&a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main__funcs_8cpp_a0d534b9eb0852b845e04ad0082a496e1}\label{main__funcs_8cpp_a0d534b9eb0852b845e04ad0082a496e1}} 
+\index{main\_funcs.cpp@{main\_funcs.cpp}!check\_collision@{check\_collision}}
+\index{check\_collision@{check\_collision}!main\_funcs.cpp@{main\_funcs.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_collision()}{check\_collision()}}
+{\footnotesize\ttfamily bool check\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAsteroid}{Asteroid}} \&}]{a,  }\item[{\mbox{\hyperlink{classShip}{Ship}} \&}]{s }\end{DoxyParamCaption})}
+
+Function that checks collision between objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classAsteroid}{Asteroid}} \\
+\hline
+{\em s} & \mbox{\hyperlink{classShip}{Ship}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main__funcs_8cpp_ad08cf1e0c21e503c74952f5de844800c}\label{main__funcs_8cpp_ad08cf1e0c21e503c74952f5de844800c}} 
+\index{main\_funcs.cpp@{main\_funcs.cpp}!get\_object\_copies@{get\_object\_copies}}
+\index{get\_object\_copies@{get\_object\_copies}!main\_funcs.cpp@{main\_funcs.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_object\_copies()}{get\_object\_copies()}}
+{\footnotesize\ttfamily std\+::set$<$vector$<$float$>$ $>$ get\+\_\+object\+\_\+copies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseObject}{Base\+Object}} \&}]{obj }\end{DoxyParamCaption})}
+
+Creation of visible asteroid\textquotesingle{}s copies func
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & asteroid or ship object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main__funcs_8cpp_ab634b82d500df5be0604cc53eabb1c1e}\label{main__funcs_8cpp_ab634b82d500df5be0604cc53eabb1c1e}} 
+\index{main\_funcs.cpp@{main\_funcs.cpp}!split\_asteroid@{split\_asteroid}}
+\index{split\_asteroid@{split\_asteroid}!main\_funcs.cpp@{main\_funcs.cpp}}
+\doxysubsubsection{\texorpdfstring{split\_asteroid()}{split\_asteroid()}}
+{\footnotesize\ttfamily void split\+\_\+asteroid (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classAsteroid}{Asteroid}} $>$ \&}]{aas,  }\item[{\mbox{\hyperlink{classAsteroid}{Asteroid}} \&}]{a }\end{DoxyParamCaption})}
+
+Spit asteroid after destruction
+
+
+\begin{DoxyParams}{Parameters}
+{\em aas} & asteroid array \\
+\hline
+{\em a} & origin asteroid \\
+\hline
+\end{DoxyParams}

@@ -70,43 +70,39 @@ $(function() {
 <div class="title">Ship.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Ship_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ASTEROIDS_SHIP_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ASTEROIDS_SHIP_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="BaseObject_8h.html">BaseObject.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classShip.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShip.html">Ship</a> : <span class="keyword">public</span> <a class="code" href="classBaseObject.html">BaseObject</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">   12</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">safe_mode</a> = <span class="keyword">false</span>; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classShip.html#a2275602cc505a55f41893bbb20495a93">   13</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a2275602cc505a55f41893bbb20495a93">destroyed</a> = <span class="keyword">false</span>; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">hp</a> = 3; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classShip.html#a1c255113bbd408fad402bdaa17353c01">Ship</a>(<span class="keywordtype">float</span> W, <span class="keywordtype">float</span> H);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac243a7f83f8a6ac699ba521e9cc136b5">move</a>(<span class="keywordtype">float</span> dt);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#a6287261fb649ffa3c3d2dd84253dc9f1">rotate</a>(<span class="keywordtype">float</span> dt, <span class="keywordtype">bool</span> left);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a97bce7f63d8bf80784a3c0cbd570e2cf">destroy_ship</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a67973a8aa54ae778666b424b8b78574f">respawn_ship</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a24ebaeaebdb3f60215144a4cb8d7a6ad">change_safe_mode</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a37ce4cdeba51c04adabd9bedd4319dde">is_destroyed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a8ceb3e7259c4d9e4487092fb0b0f7b1c">is_alive</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#ace949c15ab5f3f469a460a1d92fde65b">is_safe</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShip.html#a390253ff18553a172317b281d681e571">get_hp</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classShip.html#a04daa7d9ccaaaa0cdbdaea76e9c2da65">get_angle</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif //ASTEROIDS_SHIP_H</span></div>
+<a href="Ship_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="BaseObject_8h.html">BaseObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classShip.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShip.html">Ship</a> : <span class="keyword">public</span> <a class="code" href="classBaseObject.html">BaseObject</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">   11</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">safe_mode</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classShip.html#a2275602cc505a55f41893bbb20495a93">   12</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a2275602cc505a55f41893bbb20495a93">destroyed</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">hp</a> = 3; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classShip.html#a1c255113bbd408fad402bdaa17353c01">Ship</a>(<span class="keywordtype">float</span> W, <span class="keywordtype">float</span> H);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#ac243a7f83f8a6ac699ba521e9cc136b5">move</a>(<span class="keywordtype">float</span> dt);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBaseObject.html#a6287261fb649ffa3c3d2dd84253dc9f1">rotate</a>(<span class="keywordtype">float</span> dt, <span class="keywordtype">bool</span> left);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a97bce7f63d8bf80784a3c0cbd570e2cf">destroy_ship</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a67973a8aa54ae778666b424b8b78574f">respawn_ship</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShip.html#a24ebaeaebdb3f60215144a4cb8d7a6ad">change_safe_mode</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a37ce4cdeba51c04adabd9bedd4319dde">is_destroyed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#a8ceb3e7259c4d9e4487092fb0b0f7b1c">is_alive</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShip.html#ace949c15ab5f3f469a460a1d92fde65b">is_safe</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShip.html#a390253ff18553a172317b281d681e571">get_hp</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classShip.html#a04daa7d9ccaaaa0cdbdaea76e9c2da65">get_angle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassShip_html_a97bce7f63d8bf80784a3c0cbd570e2cf"><div class="ttname"><a href="classShip.html#a97bce7f63d8bf80784a3c0cbd570e2cf">Ship::destroy_ship</a></div><div class="ttdeci">void destroy_ship()</div><div class="ttdoc">Ship destruction func.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:43</div></div>
 <div class="ttc" id="aBaseObject_8h_html"><div class="ttname"><a href="BaseObject_8h.html">BaseObject.h</a></div></div>
@@ -115,15 +111,15 @@ $(function() {
 <div class="ttc" id="aclassShip_html_a04daa7d9ccaaaa0cdbdaea76e9c2da65"><div class="ttname"><a href="classShip.html#a04daa7d9ccaaaa0cdbdaea76e9c2da65">Ship::get_angle</a></div><div class="ttdeci">float get_angle() const</div><div class="ttdoc">Returns ship angle.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:74</div></div>
 <div class="ttc" id="aclassShip_html_ace949c15ab5f3f469a460a1d92fde65b"><div class="ttname"><a href="classShip.html#ace949c15ab5f3f469a460a1d92fde65b">Ship::is_safe</a></div><div class="ttdeci">bool is_safe() const</div><div class="ttdoc">Returns whether ship in safe mode or not.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:66</div></div>
 <div class="ttc" id="aclassShip_html_a37ce4cdeba51c04adabd9bedd4319dde"><div class="ttname"><a href="classShip.html#a37ce4cdeba51c04adabd9bedd4319dde">Ship::is_destroyed</a></div><div class="ttdeci">bool is_destroyed() const</div><div class="ttdoc">Returns whether ship destroyed or not.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:52</div></div>
-<div class="ttc" id="aclassShip_html_aa2d86cea2f0912918e0ab9d23cecb0b1"><div class="ttname"><a href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">Ship::hp</a></div><div class="ttdeci">int hp</div><div class="ttdoc">ship's hp</div><div class="ttdef"><b>Definition:</b> Ship.h:14</div></div>
+<div class="ttc" id="aclassShip_html_aa2d86cea2f0912918e0ab9d23cecb0b1"><div class="ttname"><a href="classShip.html#aa2d86cea2f0912918e0ab9d23cecb0b1">Ship::hp</a></div><div class="ttdeci">int hp</div><div class="ttdoc">ship's hp</div><div class="ttdef"><b>Definition:</b> Ship.h:13</div></div>
 <div class="ttc" id="aclassShip_html_a67973a8aa54ae778666b424b8b78574f"><div class="ttname"><a href="classShip.html#a67973a8aa54ae778666b424b8b78574f">Ship::respawn_ship</a></div><div class="ttdeci">void respawn_ship()</div><div class="ttdoc">Ship respawn func.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:56</div></div>
-<div class="ttc" id="aclassBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdoc">Base class for game objects.</div><div class="ttdef"><b>Definition:</b> BaseObject.h:10</div></div>
+<div class="ttc" id="aclassBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdoc">Base class for game objects.</div><div class="ttdef"><b>Definition:</b> BaseObject.h:9</div></div>
 <div class="ttc" id="aclassBaseObject_html_a6287261fb649ffa3c3d2dd84253dc9f1"><div class="ttname"><a href="classBaseObject.html#a6287261fb649ffa3c3d2dd84253dc9f1">BaseObject::rotate</a></div><div class="ttdeci">virtual void rotate()</div><div class="ttdoc">Asteroid rotation func.</div><div class="ttdef"><b>Definition:</b> BaseObject.cpp:8</div></div>
 <div class="ttc" id="aclassShip_html_a1c255113bbd408fad402bdaa17353c01"><div class="ttname"><a href="classShip.html#a1c255113bbd408fad402bdaa17353c01">Ship::Ship</a></div><div class="ttdeci">Ship(float W, float H)</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:6</div></div>
-<div class="ttc" id="aclassShip_html_a2275602cc505a55f41893bbb20495a93"><div class="ttname"><a href="classShip.html#a2275602cc505a55f41893bbb20495a93">Ship::destroyed</a></div><div class="ttdeci">bool destroyed</div><div class="ttdoc">does asteroid destroyed</div><div class="ttdef"><b>Definition:</b> Ship.h:13</div></div>
-<div class="ttc" id="aclassShip_html"><div class="ttname"><a href="classShip.html">Ship</a></div><div class="ttdoc">Game object Ship class.</div><div class="ttdef"><b>Definition:</b> Ship.h:10</div></div>
+<div class="ttc" id="aclassShip_html_a2275602cc505a55f41893bbb20495a93"><div class="ttname"><a href="classShip.html#a2275602cc505a55f41893bbb20495a93">Ship::destroyed</a></div><div class="ttdeci">bool destroyed</div><div class="ttdoc">does asteroid destroyed</div><div class="ttdef"><b>Definition:</b> Ship.h:12</div></div>
+<div class="ttc" id="aclassShip_html"><div class="ttname"><a href="classShip.html">Ship</a></div><div class="ttdoc">Game object Ship class.</div><div class="ttdef"><b>Definition:</b> Ship.h:9</div></div>
 <div class="ttc" id="aclassShip_html_a24ebaeaebdb3f60215144a4cb8d7a6ad"><div class="ttname"><a href="classShip.html#a24ebaeaebdb3f60215144a4cb8d7a6ad">Ship::change_safe_mode</a></div><div class="ttdeci">void change_safe_mode()</div><div class="ttdoc">Ship making ship visible or invisible for asteroids func.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:62</div></div>
-<div class="ttc" id="aclassShip_html_a0b702d5b8dc1b96439604fc492e15275"><div class="ttname"><a href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">Ship::safe_mode</a></div><div class="ttdeci">bool safe_mode</div><div class="ttdoc">can asteroid be destroyed</div><div class="ttdef"><b>Definition:</b> Ship.h:12</div></div>
+<div class="ttc" id="aclassShip_html_a0b702d5b8dc1b96439604fc492e15275"><div class="ttname"><a href="classShip.html#a0b702d5b8dc1b96439604fc492e15275">Ship::safe_mode</a></div><div class="ttdeci">bool safe_mode</div><div class="ttdoc">can asteroid be destroyed</div><div class="ttdef"><b>Definition:</b> Ship.h:11</div></div>
 <div class="ttc" id="aclassShip_html_a8ceb3e7259c4d9e4487092fb0b0f7b1c"><div class="ttname"><a href="classShip.html#a8ceb3e7259c4d9e4487092fb0b0f7b1c">Ship::is_alive</a></div><div class="ttdeci">bool is_alive() const</div><div class="ttdoc">Returns whether ship has hp or not.</div><div class="ttdef"><b>Definition:</b> Ship.cpp:48</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

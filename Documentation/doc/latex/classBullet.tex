@@ -14,13 +14,23 @@ Game object \mbox{\hyperlink{classBullet}{Bullet}} class.
 \item 
 \mbox{\hyperlink{classBullet_a21c977c9bc8a5690dba3353ed3edf933}{Bullet}} (float W, float H, vector$<$ float $>$ xy, float en\+\_\+v)
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBullet_aa00272274548fdcd0474ae4af534d48d}{Bullet}} (\mbox{\hyperlink{classBullet}{Bullet}} \&b)
+\item 
+\mbox{\hyperlink{classBullet_ab395850457a5e635c8bddd285729ee63}{Bullet}} (\mbox{\hyperlink{classBullet}{Bullet}} \&\&b) noexcept
+\item 
+\mbox{\hyperlink{classBullet}{Bullet}} \& \mbox{\hyperlink{classBullet_af868452199d26129fbc3faa80734da89}{operator=}} (\mbox{\hyperlink{classBullet}{Bullet}} \&ast)
+\item 
+\mbox{\hyperlink{classBullet}{Bullet}} \& \mbox{\hyperlink{classBullet_a0d9e5fb4280d171c3a42568f7f1fae08}{operator=}} (\mbox{\hyperlink{classBullet}{Bullet}} \&\&ast) noexcept
+\item 
+\mbox{\hyperlink{classBullet_a9e4f14ca4d33ad9445f13610135aa1f1}{$\sim$\+Bullet}} ()=default
+\item 
 void \mbox{\hyperlink{classBullet_a0d7c324bae93daf1e410858c482f2052}{move}} (float dt)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBullet}{Bullet}} move func. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classBullet_ad8cf97785331fd70ab93d31c1b196c74}{make\+\_\+invalid}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classAsteroid}{Asteroid}} self-\/destruction func. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classBullet_a5231647d44c7b676e4eee7ed69803d21}{is\+\_\+valid}} ()
 \begin{DoxyCompactList}\small\item\em Checks whether asteroid has hp or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 float \mbox{\hyperlink{classBullet_a8b2d18ffcbe5e3c91186b82c82208147}{vx}}
@@ -29,7 +39,6 @@ float \mbox{\hyperlink{classBullet_a84bd01af7de79adef538ce4d70c3fa3a}{vy}}
 \begin{DoxyCompactList}\small\item\em y vector coordinate \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classBullet_a75d0ab3ec9205271b8b4e436d5aadd72}{valid}} = true
 \begin{DoxyCompactList}\small\item\em does asteroid exist \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -39,7 +48,7 @@ Game object \mbox{\hyperlink{classBullet}{Bullet}} class.
 \mbox{\Hypertarget{classBullet_a21c977c9bc8a5690dba3353ed3edf933}\label{classBullet_a21c977c9bc8a5690dba3353ed3edf933}} 
 \index{Bullet@{Bullet}!Bullet@{Bullet}}
 \index{Bullet@{Bullet}!Bullet@{Bullet}}
-\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{float}]{W,  }\item[{float}]{H,  }\item[{vector$<$ float $>$}]{xy,  }\item[{float}]{en\+\_\+v }\end{DoxyParamCaption})}
 
 
@@ -57,6 +66,24 @@ Default constructor.
 {\em en\+\_\+v} & direction vector \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classBullet_aa00272274548fdcd0474ae4af534d48d}\label{classBullet_aa00272274548fdcd0474ae4af534d48d}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet}{Bullet}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBullet_ab395850457a5e635c8bddd285729ee63}\label{classBullet_ab395850457a5e635c8bddd285729ee63}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet}{Bullet}} \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classBullet_a9e4f14ca4d33ad9445f13610135aa1f1}\label{classBullet_a9e4f14ca4d33ad9445f13610135aa1f1}} 
+\index{Bullet@{Bullet}!````~Bullet@{$\sim$Bullet}}
+\index{````~Bullet@{$\sim$Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bullet()}{~Bullet()}}
+{\footnotesize\ttfamily Bullet\+::$\sim$\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -98,6 +125,18 @@ param {\itshape valid}
 {\em dt} & Time from last frame \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a0d9e5fb4280d171c3a42568f7f1fae08}\label{classBullet_a0d9e5fb4280d171c3a42568f7f1fae08}} 
+\index{Bullet@{Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBullet}{Bullet}} \& Bullet\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet}{Bullet}} \&\&}]{ast }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classBullet_af868452199d26129fbc3faa80734da89}\label{classBullet_af868452199d26129fbc3faa80734da89}} 
+\index{Bullet@{Bullet}!operator=@{operator=}}
+\index{operator=@{operator=}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBullet}{Bullet}} \& Bullet\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet}{Bullet}} \&}]{ast }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -105,7 +144,7 @@ param {\itshape valid}
 \index{Bullet@{Bullet}!valid@{valid}}
 \index{valid@{valid}!Bullet@{Bullet}}
 \doxysubsubsection{\texorpdfstring{valid}{valid}}
-{\footnotesize\ttfamily bool Bullet\+::valid = true\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool Bullet\+::valid = true\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -115,7 +154,7 @@ does asteroid exist
 \index{Bullet@{Bullet}!vx@{vx}}
 \index{vx@{vx}!Bullet@{Bullet}}
 \doxysubsubsection{\texorpdfstring{vx}{vx}}
-{\footnotesize\ttfamily float Bullet\+::vx\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily float Bullet\+::vx\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -125,7 +164,7 @@ x vector coordinate
 \index{Bullet@{Bullet}!vy@{vy}}
 \index{vy@{vy}!Bullet@{Bullet}}
 \doxysubsubsection{\texorpdfstring{vy}{vy}}
-{\footnotesize\ttfamily float Bullet\+::vy\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily float Bullet\+::vy\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
